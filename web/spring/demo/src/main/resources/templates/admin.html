@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #222;
+      color: #eee;
+      padding: 1rem;
+      width: 200px;
+      height: 100vh;
+      position: fixed;
+      top: 60px;
+      left: 0;
+    }
+
+    main {
+      margin-left: 200px;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      background: #fff;
+    }
+
+    th, td {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+
+    th {
+      background-color: #eee;
+    }
+
+    .button {
+      padding: 0.5rem 1rem;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #0056b3;
+    }
+
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Admin Panel</h1>
+</header>
+
+<nav>
+  <p><strong>Menu</strong></p>
+  <ul style="list-style:none; padding-left: 0;">
+    <li><a href="#" style="color: #ccc; text-decoration: none;">Dashboard</a></li>
+    <li><a href="#" style="color: #ccc; text-decoration: none;">User Management</a></li>
+    <li><a href="#" style="color: #ccc; text-decoration: none;">Logs</a></li>
+    <li><a href="#" style="color: #ccc; text-decoration: none;">Settings</a></li>
+  </ul>
+</nav>
+
+<main>
+  <h2>User List</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Role</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>admin</td>
+        <td>admin@example.com</td>
+        <td>ADMIN</td>
+        <td>
+          <button class="button">Edit</button>
+          <button class="button" style="background-color: #dc3545;">Delete</button>
+        </td>
+      </tr>
+      <!-- more rows here -->
+    </tbody>
+  </table>
+
+  <footer>
+    <p>&copy; 2025 Admin Dashboard</p>
+  </footer>
+</main>
+
+</body>
+</html>

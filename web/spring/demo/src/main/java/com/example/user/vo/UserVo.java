@@ -1,4 +1,4 @@
-package com.example.vo;
+package com.example.user.vo;
 
 import java.io.Serializable;
 
